@@ -1,0 +1,19 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Alex Eftink <aeftink@coolfiresolutions.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "signup",
+    "packages/*"
+  ],
+  "scripts": {
+    "components": "yarn workspace @coolfire/components",
+    "signup": "yarn workspace signup"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  }
+}
