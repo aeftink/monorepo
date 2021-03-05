@@ -1,7 +1,9 @@
 {
-  "extends": "./tsconfig.build.json",
-
   "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "noEmitOnError": true,
     "baseUrl": ".",
     "paths": {
       "@coolfire/*": ["packages/*/src"]
@@ -10,5 +12,10 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "types": []
-  }
+  },
+
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
